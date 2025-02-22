@@ -11,8 +11,9 @@ public class MyFirstLoop {
         if (n <= 0) {
             System.err.println("I said write a number");
         }
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             System.out.println(text);
+        }
         scanner.close();
     }
 }

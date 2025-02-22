@@ -1,14 +1,20 @@
 import java.util.Scanner;
+
 public class FizzBuzz {
     public static void main(String[] args) {
+        System.out.println("Please write a number which must be greater than 0 ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Write a number which must be higher than 0:");
-        String text = scanner.nextLine();
-        int n = scanner.nextInt();
-        if (n == 0) {
-            System.err.println("I said higher than 0");
-            return;
-        }for (n=0; ; n++);
-
+        String number = scanner.nextLine();
+        int i = scanner.nextInt();
+        if (i <= 105 && i % 3 == 0 && i % 5 == 0) {
+            System.out.println("FizzBuzz");
+        } else if (i <= 105 && i % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (i <= 105 && i % 5 == 0) {
+            System.out.println("Buzz");
+        } else {
+            System.err.println("Error!");
+        }
+        scanner.close();
     }
 }
