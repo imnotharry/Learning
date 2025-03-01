@@ -117,13 +117,13 @@ public class BasicAlgorithms {
         System.out.println("↓↓↓ Sum/prod task downward ↓↓↓");
         System.out.println();
         //Sum/prod tasks
-        int sumnumber = 0;
+        int sumNumber = 0;
         for (int i = 0; i < anArray.length; i++) {
-            sumnumber += anArray[i];
+            sumNumber += anArray[i];
         }
-        System.out.println(sumnumber);
+        System.out.println(sumNumber);
         System.out.println();
-        System.out.println("The sum of all numbers in the array are: " + sumnumber);
+        System.out.println("The sum of all numbers in the array are: " + sumNumber);
         System.out.println();
         int prodNumber = Integer.MAX_VALUE;
         for (int i = 0; i < anArray.length; i++) {
