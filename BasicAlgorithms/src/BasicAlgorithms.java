@@ -116,6 +116,7 @@ public class BasicAlgorithms {
         System.out.println();
         System.out.println("↓↓↓ Sum/prod task downward ↓↓↓");
         System.out.println();
+        //Sum/prod tasks
         int sumnumbers = 0;
         for (int i = 0; i < anArray.length; i++) {
             sumnumbers += anArray[i];
