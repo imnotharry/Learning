@@ -125,7 +125,7 @@ public class BasicAlgorithms {
         System.out.println();
         System.out.println("The sum of all numbers in the array are: " + sumNumber);
         System.out.println();
-        int prodNumber = Integer.MAX_VALUE;
+        int prodNumber = 1;
         for (int i = 0; i < anArray.length; i++) {
             prodNumber *= anArray[i];
         }
