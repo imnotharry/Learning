@@ -24,10 +24,10 @@ public class BasicAlgorithms {
         //Counting tasks
         int counter = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int arrayElements = anArray[i];
-            if (arrayElements > 100) {
+            int numbers = anArray[i];
+            if (numbers > 100) {
                 counter++;
-                System.out.println(arrayElements + " " + "is Greater than 100.");
+                System.out.println(numbers + " " + "is Greater than 100.");
             }
         }
         System.out.println();
@@ -35,10 +35,10 @@ public class BasicAlgorithms {
         System.out.println();
         int counter1 = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int arrayElements = anArray[i];
-            if (-50 < arrayElements && arrayElements < 78) {
+            int numbers = anArray[i];
+            if (-50 < numbers && numbers < 78) {
                 counter1++;
-                System.out.println("Numbers in the array between -50 and 78: " + arrayElements);
+                System.out.println("Numbers in the array between -50 and 78: " + numbers);
             }
         }
         System.out.println();
@@ -80,39 +80,39 @@ public class BasicAlgorithms {
         System.out.println("↓↓↓ Searching task downward ↓↓↓");
         System.out.println();
         // Searching task
-        boolean numberone = false;
+        boolean isValid = false;
         for (int i = 0; i < anArray.length; i++) {
             if (anArray[i] == 100) {
-                numberone = true;
+                isValid = true;
                 break;
             }
         }
         System.out.println();
-        System.out.println("Can we find number 100 in the array? The statement is: " + numberone);
+        System.out.println("Can we find number 100 in the array? The statement is: " + isValid);
         System.out.println();
-        boolean numbertwo = false;
+        boolean isGreaterThan100 = false;
         for (int i = 0; i < anArray.length; i++) {
             if (anArray[i] > 100) {
-                numbertwo = true;
+                isGreaterThan100 = true;
                 break;
             }
         }
         System.out.println();
-        System.out.println("Can we find higher numbers than 100? The statement is: " + numbertwo);
+        System.out.println("Can we find higher numbers than 100? The statement is: " + isGreaterThan100);
         System.out.println();
-        boolean numberthree = false;
+        boolean isTrue = false;
         for (int i = 0; i < anArray.length; i++) {
             if (anArray[i] == 7) {
                 System.out.println(i);
-                numberthree = true;
+                isTrue = true;
                 break;
             }
         }
-        if (!numberthree) {
+        if (!isTrue) {
             System.out.println("-1");
         }
         System.out.println();
-        System.out.println("Can we find number 7 here? If not, the answer will be -1. The statement is:  " + numberthree);
+        System.out.println("Can we find number 7 here? If not, the answer will be -1. The statement is:  " + isTrue);
         System.out.println();
         System.out.println("↓↓↓ Sum/prod task downward ↓↓↓");
         System.out.println();
@@ -133,7 +133,7 @@ public class BasicAlgorithms {
         System.out.println();
         System.out.println("The prod of all numbers in the array are: " + prodnumbers);
         System.out.println();
-        int interestingsums = Integer.MAX_VALUE;
+        int interestingsums = 0;
         for (int i = 0; i < anArray.length; i++) {
             if ((i + 1) % 4 == 0) {
                 interestingsums -= anArray[i];
