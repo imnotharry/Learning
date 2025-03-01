@@ -125,23 +125,23 @@ public class BasicAlgorithms {
         System.out.println();
         System.out.println("The sum of all numbers in the array are: " + sumnumber);
         System.out.println();
-        int prodnumber = Integer.MAX_VALUE;
+        int prodNumber = Integer.MAX_VALUE;
         for (int i = 0; i < anArray.length; i++) {
-            prodnumber *= anArray[i];
+            prodNumber *= anArray[i];
         }
-        System.out.println(prodnumber);
+        System.out.println(prodNumber);
         System.out.println();
-        System.out.println("The prod of all numbers in the array are: " + prodnumber);
+        System.out.println("The prod of all numbers in the array are: " + prodNumber);
         System.out.println();
-        int interestingsum = 0;
+        int interestingSum = 0;
         for (int i = 0; i < anArray.length; i++) {
             if ((i + 1) % 4 == 0) {
-                interestingsum -= anArray[i];
+                interestingSum -= anArray[i];
             } else {
-                interestingsum += anArray[i];
+                interestingSum += anArray[i];
             }
         }
         System.out.println();
-        System.out.println("This is an interesting sum that we'll see here. The result is: " + interestingsum);
+        System.out.println("This is an interesting sum that we'll see here. The result is: " + interestingSum);
     }
 }
