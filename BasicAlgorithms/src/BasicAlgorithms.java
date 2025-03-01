@@ -24,10 +24,10 @@ public class BasicAlgorithms {
         //Counting tasks
         int counter = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int numbers = anArray[i];
-            if (numbers > 100) {
+            int number = anArray[i];
+            if (number > 100) {
                 counter++;
-                System.out.println(numbers + " " + "is Greater than 100.");
+                System.out.println(number + " " + "is Greater than 100.");
             }
         }
         System.out.println();
@@ -35,10 +35,10 @@ public class BasicAlgorithms {
         System.out.println();
         int counter1 = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int numbers = anArray[i];
-            if (-50 < numbers && numbers < 78) {
+            int number = anArray[i];
+            if (-50 < number && number < 78) {
                 counter1++;
-                System.out.println("Numbers in the array between -50 and 78: " + numbers);
+                System.out.println("Numbers in the array between -50 and 78: " + number);
             }
         }
         System.out.println();
@@ -46,10 +46,10 @@ public class BasicAlgorithms {
         System.out.println();
         int counter2 = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int arrayElements = anArray[i];
-            if (arrayElements % 2 == 0) {
+            int number = anArray[i];
+            if (number % 2 == 0) {
                 counter2++;
-                System.out.println("This can be divided by 2: " + arrayElements);
+                System.out.println("This can be divided by 2: " + number);
             }
         }
         System.out.println();
@@ -57,10 +57,10 @@ public class BasicAlgorithms {
         System.out.println();
         int counter3 = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int arrayElements = anArray[i];
-            if (arrayElements % 3 != 0) {
+            int number = anArray[i];
+            if (number % 3 != 0) {
                 counter3++;
-                System.out.println("This can't be divided by 3: " + arrayElements);
+                System.out.println("This can't be divided by 3: " + number);
             }
         }
         System.out.println();
@@ -68,10 +68,10 @@ public class BasicAlgorithms {
         System.out.println();
         int counter4 = 0;
         for (int i = 0; i < anArray.length; i++) {
-            int arrayElements = anArray[i];
-            if (arrayElements == 73) {
+            int number = anArray[i];
+            if (number == 73) {
                 counter4++;
-                System.out.println(arrayElements);
+                System.out.println(number);
             }
         }
         System.out.println();
@@ -117,31 +117,31 @@ public class BasicAlgorithms {
         System.out.println("↓↓↓ Sum/prod task downward ↓↓↓");
         System.out.println();
         //Sum/prod tasks
-        int sumnumbers = 0;
+        int sumnumber = 0;
         for (int i = 0; i < anArray.length; i++) {
-            sumnumbers += anArray[i];
+            sumnumber += anArray[i];
         }
-        System.out.println(sumnumbers);
+        System.out.println(sumnumber);
         System.out.println();
-        System.out.println("The sum of all numbers in the array are: " + sumnumbers);
+        System.out.println("The sum of all numbers in the array are: " + sumnumber);
         System.out.println();
-        int prodnumbers = Integer.MAX_VALUE;
+        int prodnumber = Integer.MAX_VALUE;
         for (int i = 0; i < anArray.length; i++) {
-            prodnumbers *= anArray[i];
+            prodnumber *= anArray[i];
         }
-        System.out.println(prodnumbers);
+        System.out.println(prodnumber);
         System.out.println();
-        System.out.println("The prod of all numbers in the array are: " + prodnumbers);
+        System.out.println("The prod of all numbers in the array are: " + prodnumber);
         System.out.println();
-        int interestingsums = 0;
+        int interestingsum = 0;
         for (int i = 0; i < anArray.length; i++) {
             if ((i + 1) % 4 == 0) {
-                interestingsums -= anArray[i];
+                interestingsum -= anArray[i];
             } else {
-                interestingsums += anArray[i];
+                interestingsum += anArray[i];
             }
         }
         System.out.println();
-        System.out.println("This is an interesting sum that we'll see here. The result is: " + interestingsums);
+        System.out.println("This is an interesting sum that we'll see here. The result is: " + interestingsum);
     }
 }
