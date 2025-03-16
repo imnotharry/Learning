@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Methods {
     public static void main(String[] args) {
         System.out.println("Task 1.");
@@ -24,7 +22,7 @@ public class Methods {
         System.out.println();
         System.out.println("Task 5.");
         System.out.println();
-        isDivisibleByFive(20);
+        printDivisibleByFive(20);
         System.out.println();
         System.out.println("Task 6.");
         System.out.println();
@@ -43,13 +41,11 @@ public class Methods {
         System.out.println();
         System.out.println("Task 9.");
         System.out.println();
-        cubicNumbers(6);
+        printCubicNumbers(6);
         System.out.println();
         System.out.println("Task 10.");
         System.out.println();
         printUntilSixtyFour(64);
-        System.out.println();
-        System.out.println("Task 11.");
         System.out.println();
         System.out.println("Task 11.");
         System.out.println();
@@ -64,6 +60,20 @@ public class Methods {
         System.out.println();
         System.out.println(concatenateStrings("Longest", "method ", "ever. "));
         System.out.println();
+        System.out.println("Task 14.");
+        System.out.println(); // feladat
+        System.out.println();
+        System.out.println("Task 15.");
+        System.out.println();
+        System.out.println(); // feladat
+        System.out.println();
+        System.out.println("Task 16.");
+        System.out.println();
+        System.out.println(); // feladat
+        System.out.println();
+        System.out.println("Task 17.");
+        System.out.println();
+        System.out.println(); // feladat
     }
 
     //Task 1
@@ -95,7 +105,7 @@ public class Methods {
     }
 
     //Task 5
-    public static void isDivisibleByFive(int number) {
+    public static void printDivisibleByFive(int number) {
         for (int i = 1; i <= number; i++) {
             if (i % 5 == 0) {
                 System.out.println(i);
@@ -118,25 +128,19 @@ public class Methods {
 
     //Task 7
     public static boolean isDivisibleBySecondNumber(int number, int divisor) {
-        if (number % divisor == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return number % divisor == 0 ;
+
     }
 
     //Task 8
     public static boolean isEqualToThird(int number1, int number2, int number3) {
-        if (number1 + number2 == number3) {
-            return true;
-        } else {
-            return false;
-        }
+        return number1+number2==number3;
+
     }
 
     //Task 9
-    public static void cubicNumbers(int number) {
-        for (int i = 1; i <= number; i++) {
+    public static void printCubicNumbers(int number) {
+        for (int i = 0; i <= number; i++) {
             System.out.println((int) Math.pow(number, i));
         }
     }
@@ -153,7 +157,6 @@ public class Methods {
 
     //Task 11
     public static boolean canSumUp(int target, int... nums) {
-        Arrays.sort(nums);
 
         for (int i = 0; i < nums.length; i++) {
             int remaining = target - nums[i];
@@ -188,4 +191,6 @@ public class Methods {
         }
         return result.toString();
     }
+    //Task 14
+
 }
