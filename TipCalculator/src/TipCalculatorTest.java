@@ -1,16 +1,16 @@
 import org.junit.jupiter.api.Assertions;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
 public class TipCalculatorTest {
     int[] anArrayForTesting = new int[]{2000, 250, 300, 50, 250};
 
     @Test
-    void shouldReturnTooHigh() {
+    void shouldReturnMinusOneBecauseNumberIsTooHigh() {
         Assertions.assertEquals(-1, TipCalculator.checkPercentRange(99));
     }
 
     @Test
-    void shouldReturnMinusOneBecauseItIsZero() {
+    void shouldReturnMinusOneBecauseNumberIsZero() {
         Assertions.assertEquals(-1, TipCalculator.checkPercentRange(0));
     }
 
@@ -20,7 +20,7 @@ public class TipCalculatorTest {
     }
 
     @Test
-    void shouldReturnMinusOneFromTipCalculatorBecauseItIsZero() {
+    void shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero() {
         Assertions.assertEquals(-1, TipCalculator.calculateTip(new int[]{TipCalculator.calculateTotalPrize(anArrayForTesting)}, TipCalculator.checkPercentRange(0)));
     }
 
