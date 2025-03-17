@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="754a1243-32ff-4714-94ff-a66b5af68d81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TipCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TipCalculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TipCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TipCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TipCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TipCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +24,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2uPiP1mMfwZBhAs2LtYhyI2rF1T" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,11 +35,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TipCalculator.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooHigh.executor": "Run",
+    "JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooLow.executor": "Run",
     "JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsZero.executor": "Run",
+    "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh.executor": "Run",
+    "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow.executor": "Run",
     "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooSmall.executor": "Run",
     "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero.executor": "Run",
+    "JUnit.TipCalculatorTest.shouldReturnTheGivenPercentWhichIsBetween10And80.executor": "Run",
+    "JUnit.TipCalculatorTest.shouldReturnTheGoodValueFromTipCalculator.executor": "Run",
     "JUnit.TipCalculatorTest.shouldReturnTheSumOfTheGivenArray.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -52,52 +57,49 @@
     "onboarding.tips.debug.path": "C:/AK/TipCalculator/src/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TipCalculatorTest.shouldReturnTheSumOfTheGivenArray">
-    <configuration name="TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooHigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow">
+    <configuration name="TipCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TipCalculator" />
+      <module name="TipCalculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TipCalculator" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TipCalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnMinusOneBecauseNumberIsTooHigh" />
+      <option name="METHOD_NAME" value="shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TipCalculator" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TipCalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnMinusOneBecauseNumberIsZero" />
+      <option name="METHOD_NAME" value="shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TipCalculatorTest.shouldReturnTheGivenPercentWhichIsBetween10And80" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TipCalculator" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TipCalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooSmall" />
+      <option name="METHOD_NAME" value="shouldReturnTheGivenPercentWhichIsBetween10And80" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TipCalculatorTest.shouldReturnTheGoodValueFromTipCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TipCalculator" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TipCalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TipCalculatorTest.shouldReturnTheSumOfTheGivenArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TipCalculator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TipCalculatorTest" />
-      <option name="METHOD_NAME" value="shouldReturnTheSumOfTheGivenArray" />
+      <option name="METHOD_NAME" value="shouldReturnTheGoodValueFromTipCalculator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnTheSumOfTheGivenArray" />
-        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero" />
-        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooSmall" />
-        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsZero" />
-        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooHigh" />
+        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow" />
+        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnTheGoodValueFromTipCalculator" />
+        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh" />
+        <item itemvalue="JUnit.TipCalculatorTest.shouldReturnTheGivenPercentWhichIsBetween10And80" />
+        <item itemvalue="Application.TipCalculator" />
       </list>
     </recent_temporary>
   </component>
