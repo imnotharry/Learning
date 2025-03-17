@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Methods {
     public static void main(String[] args) {
         System.out.println("Task 1.");
@@ -60,20 +62,27 @@ public class Methods {
         System.out.println();
         System.out.println(concatenateStrings("Longest", "method ", "ever. "));
         System.out.println();
+        System.out.println("↓↓↓ Difficult tasks downside (14-17) ↓↓↓");
+        System.out.println();
         System.out.println("Task 14.");
-        System.out.println(); // feladat
+        System.out.println();
+        int[][] anArray1 = {{2, 4, 6}, {8, 10, 12}, {14, 16, 18}};
+        System.out.println(sum2DArrayValue(anArray1));
         System.out.println();
         System.out.println("Task 15.");
         System.out.println();
-        System.out.println(); // feladat
+        int[][] anArray2 = {{2, 2, 2}, {4, 4, 4}, {8, 8, 8}};
+        System.out.println((Arrays.toString(sumSubarraysValue(anArray2))));
         System.out.println();
         System.out.println("Task 16.");
         System.out.println();
-        System.out.println(); // feladat
+        int[][] anArray3 = {{1, 1, 1, 1}, {2, 2, 2, 2}, {3, 3, 3, 3}, {4, 4, 4, 4}};
+        System.out.println(sumMainDiagonalFrom2DArray(anArray3));
         System.out.println();
         System.out.println("Task 17.");
         System.out.println();
-        System.out.println(); // feladat
+        int[][] anArray4 = {{2, 4, 6, 8}, {8, 6, 4, 2}, {1, 3, 5, 7}, {7, 5, 3, 1}};
+        System.out.println(diagonalDifferenceOfTheArray(anArray4));
     }
 
     //Task 1
@@ -128,13 +137,13 @@ public class Methods {
 
     //Task 7
     public static boolean isDivisibleBySecondNumber(int number, int divisor) {
-        return number % divisor == 0 ;
+        return number % divisor == 0;
 
     }
 
     //Task 8
     public static boolean isEqualToThird(int number1, int number2, int number3) {
-        return number1+number2==number3;
+        return number1 + number2 == number3;
 
     }
 
@@ -191,6 +200,49 @@ public class Methods {
         }
         return result.toString();
     }
-    //Task 14
 
+    //Task 14
+    public static int sum2DArrayValue(int[][] array) {
+        int total = 0;
+        for (int[] row : array) {
+            for (int col : row) {
+                total += col;
+            }
+        }
+        return total;
+    }
+
+    //Task 15
+    public static int[] sumSubarraysValue(int[][] array) {
+        int[] result = new int[array.length];
+        int subarraysSize = array[0].length;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j <= subarraysSize; j++) {
+                if (j >= subarraysSize) break;
+                result[i] += array[i][j];
+            }
+        }
+        return result;
+    }
+
+    //Task 16
+    public static int sumMainDiagonalFrom2DArray(int[][] array) {
+        int n = array.length;
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += array[i][i];
+        }
+        return sum;
+    }
+
+    //Task 17
+    public static int diagonalDifferenceOfTheArray(int[][] array) {
+        int sumDiagonal1 = 0, sumDiagonal2 = 0;
+        for (int i = 0; i < array.length; i++) {
+            sumDiagonal1 += array[i][i];
+            sumDiagonal2 += array[i][array.length - i - 1];
+        }
+        return Math.abs(sumDiagonal1 - sumDiagonal2);
+    }
 }
