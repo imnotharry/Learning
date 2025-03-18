@@ -219,7 +219,9 @@ public class Methods {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j <= subarraysSize; j++) {
-                if (j >= subarraysSize) break;
+                if (j >= subarraysSize){
+                    break;
+                }
                 result[i] += array[i][j];
             }
         }
