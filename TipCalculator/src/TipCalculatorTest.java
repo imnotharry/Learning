@@ -27,23 +27,23 @@ public class TipCalculatorTest {
 
     @Test
     void shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero() {
-        Assertions.assertEquals(-1, TipCalculator.calculateTip(new int[]{TipCalculator.calculateTotalPrice(anArrayForTesting)}, TipCalculator.checkPercentRange(0)));
+        Assertions.assertEquals(-1, TipCalculator.calculateTip(TipCalculator.calculateTotalPrice(anArrayForTesting), TipCalculator.checkPercentRange(0)));
     }
 
     @Test
     void shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow() {
-        Assertions.assertEquals(-1, TipCalculator.calculateTip(new int[]{TipCalculator.calculateTotalPrice(anArrayForTesting)}, TipCalculator.checkPercentRange(5)));
+        Assertions.assertEquals(-1, TipCalculator.calculateTip(TipCalculator.calculateTotalPrice(anArrayForTesting), TipCalculator.checkPercentRange(5)));
     }
 
 
     @Test
     void shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh() {
-        Assertions.assertEquals(-1, TipCalculator.calculateTip(new int[]{TipCalculator.calculateTotalPrice(anArrayForTesting)}, TipCalculator.checkPercentRange(85)));
+        Assertions.assertEquals(-1, TipCalculator.calculateTip(TipCalculator.calculateTotalPrice(anArrayForTesting), TipCalculator.checkPercentRange(85)));
     }
 
     @Test
     void shouldReturnTheGoodValueFromTipCalculator() {
-        Assertions.assertEquals(570, TipCalculator.calculateTip(new int[]{TipCalculator.calculateTotalPrice((anArrayForTesting))}, TipCalculator.checkPercentRange(20)));
+        Assertions.assertEquals(570, TipCalculator.calculateTip(TipCalculator.calculateTotalPrice((anArrayForTesting)), TipCalculator.checkPercentRange(20)));
     }
 
     @Test
