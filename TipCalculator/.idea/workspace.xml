@@ -7,7 +7,6 @@
     <list default="true" id="754a1243-32ff-4714-94ff-a66b5af68d81" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TipCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TipCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TipCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TipCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,31 +32,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TipCalculator.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooHigh.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooLow.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsZero.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooSmall.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnTheGivenPercentWhichIsBetween10And80.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnTheGoodValueFromTipCalculator.executor": "Run",
-    "JUnit.TipCalculatorTest.shouldReturnTheSumOfTheGivenArray.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/AK/TipCalculator/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TipCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooHigh.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsTooLow.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneBecauseNumberIsZero.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooSmall.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsZero.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnTheGivenPercentWhichIsBetween10And80.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnTheGoodValueFromTipCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TipCalculatorTest.shouldReturnTheSumOfTheGivenArray.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/AK/TipCalculator/src/Main.java&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow">
+}</component>
+  <component name="RunManager" selected="Application.TipCalculator">
     <configuration name="TipCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TipCalculator" />
       <module name="TipCalculator" />
@@ -107,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TipCalculator" />
         <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooLow" />
         <item itemvalue="JUnit.TipCalculatorTest.shouldReturnTheGoodValueFromTipCalculator" />
         <item itemvalue="JUnit.TipCalculatorTest.shouldReturnMinusOneFromTipCalculatorBecauseNumberIsTooHigh" />
         <item itemvalue="JUnit.TipCalculatorTest.shouldReturnTheGivenPercentWhichIsBetween10And80" />
-        <item itemvalue="Application.TipCalculator" />
       </list>
     </recent_temporary>
   </component>

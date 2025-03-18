@@ -15,11 +15,11 @@ public class TipCalculator {
         return percent == -1 ? -1 : (numbers[0] * percent) / 100;
     }
 
-    public static int calculateTotalPrice(int[] array) {
-        int spentMoney = 0;
-        for (int number : array) {
-            spentMoney += number;
+    public static int calculateTotalPrice(int... numbers) {
+        int total = 0;
+        for (int number : numbers) {
+            total += number;
         }
-        return spentMoney;
+        return total;
     }
 }
