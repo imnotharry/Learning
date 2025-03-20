@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MethodsTesting {
@@ -8,6 +8,7 @@ public class MethodsTesting {
     int[][] testArray2 = {{2, 2, 2}, {4, 4, 4}, {8, 8, 8}};
     int[][] testArray3 = {{1, 1, 1, 1}, {2, 2, 2, 2}, {3, 3, 3, 3}, {4, 4, 4, 4}};
     int[][] testArray4 = {{2, 4, 6, 8}, {8, 6, 4, 2}, {1, 3, 5, 7}, {7, 5, 3, 1}};
+
     //Task 1
     @Test
     void shouldBeFalse() {
@@ -97,31 +98,36 @@ public class MethodsTesting {
         int expected = "I don't know to be honest ".length() * 3;
         assertEquals(result, expected);
     }
+
     //Task 13
     @Test
-    void shouldConcatenateStringsFromAnArray (){
+    void shouldConcatenateStringsFromAnArray() {
         String result = Methods.concatenateStrings("Longest", "method", "ever. ");
         String expected = "Longestmethodever. ";
         assertEquals(result, expected);
     }
+
     //Task 14
     @Test
     void shouldWriteOutTheSumOfThe2DArray() {
-        Assertions.assertEquals(90,Methods.sum2DArrayValue(testArray1));
+        Assertions.assertEquals(90, Methods.sum2DArrayValue(testArray1));
     }
+
     //Task 15
     @Test
-   void shouldReturnTheValueOfTheSubArrays(){
-    Assertions.assertEquals(6,12,24, String.valueOf(Methods.sum2DArrayValue(testArray2)));
-   }
-   //Task 16
+    void shouldReturnTheValueOfTheSubArrays() {
+        Assertions.assertEquals(6, 12, 24, String.valueOf(Methods.sum2DArrayValue(testArray2)));
+    }
+
+    //Task 16
     @Test
-    void shouldReturnTheSumOfTheMainDiagonalFrom2DArray(){
+    void shouldReturnTheSumOfTheMainDiagonalFrom2DArray() {
         Assertions.assertEquals(10, Methods.sumMainDiagonalFrom2DArray(testArray3));
     }
+
     //Task 17
     @Test
-    void shouldReturnDiagonalDifferenceOfTheArray(){
+    void shouldReturnDiagonalDifferenceOfTheArray() {
         Assertions.assertEquals(8, Methods.diagonalDifferenceOfTheArray(testArray4));
     }
 }
