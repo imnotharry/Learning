@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PrimeLister.iml" filepath="$PROJECT_DIR$/PrimeLister.iml" />
+      <module fileurl="file://$PROJECT_DIR$/primeandsquarelister.iml" filepath="$PROJECT_DIR$/primeandsquarelister.iml" />
     </modules>
   </component>
 </project>
