@@ -4,9 +4,8 @@ public class SumOfPerfectSquares {
     public static void main(String[] args) {
         int num = getANumberToSum();
         if (num > 1) {
-            sumOfPerfectSquaresUpToToNum(num);
+            System.out.println(sumOfPerfectSquaresUpToToNum(num));
         }
-        System.out.println(sumOfPerfectSquaresUpToToNum(num));
     }
 
 
@@ -20,11 +19,12 @@ public class SumOfPerfectSquares {
         }
         return num;
     }
+
     public static int sumOfPerfectSquaresUpToToNum(int num) {
         int sum = 0;
         for (int i = 1; i <= num; i++) {
             sum += i * i;
-            System.out.println(i*i);
+            System.out.println(i * i);
         }
         return sum;
     }
