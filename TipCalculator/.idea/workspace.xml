@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754a1243-32ff-4714-94ff-a66b5af68d81" name="Changes" comment="" />
+    <list default="true" id="754a1243-32ff-4714-94ff-a66b5af68d81" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../methodsparttwo/src/MethodsPartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../methodsparttwo/src/MethodsPartTwo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
