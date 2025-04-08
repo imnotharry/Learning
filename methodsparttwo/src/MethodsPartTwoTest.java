@@ -74,19 +74,19 @@ public class MethodsPartTwoTest {
     @Test
         //Task 11
     void shouldReturnSquareBecauseNumberIsPrime() {
-        Assertions.assertEquals(121, MethodsPartTwo.printWeirdPrime(11));
+        Assertions.assertEquals(121, MethodsPartTwo.calculateWeirdPrime(11));
     }
 
     @Test
         //Task11
     void shouldReturnNumberBecauseItIsDivisibleBy4AndNotPrime() {
-        Assertions.assertEquals(24, MethodsPartTwo.printWeirdPrime(12));
+        Assertions.assertEquals(24, MethodsPartTwo.calculateWeirdPrime(12));
     }
 
     @Test
         //Task 11
     void shouldReturnNumberBecauseItIsNotDivisibleBy4AndNotPrime() {
-        Assertions.assertEquals(27, MethodsPartTwo.printWeirdPrime(9));
+        Assertions.assertEquals(27, MethodsPartTwo.calculateWeirdPrime(9));
     }
 
     @Test
@@ -116,13 +116,13 @@ public class MethodsPartTwoTest {
     @Test
         //Task 14
     void shouldReturnTrueFor3TrueStatement() {
-        Assertions.assertTrue(true, String.valueOf(MethodsPartTwo.printXOR(testArray3)));
+        Assertions.assertTrue(Boolean.parseBoolean(String.valueOf(MethodsPartTwo.calculateXOR(testArray3))));
     }
 
     @Test
         //Task 14
     void shouldReturnTrueFor3FalseStatement() {
-        Assertions.assertTrue(true, String.valueOf(MethodsPartTwo.printXOR(testArray4)));
+        Assertions.assertTrue(Boolean.parseBoolean(String.valueOf(MethodsPartTwo.calculateXOR(testArray4))));
     }
 
     @Test

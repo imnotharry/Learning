@@ -37,9 +37,9 @@ public class MethodsPartTwo {
         System.out.println("If i divide with 1, we will get: " + printDividedValueBy100(1));
         System.out.println();
         System.out.println("Task 11.");
-        System.out.println("This is a prime number, so it'll return the square of it: " + printWeirdPrime(11));
-        System.out.println("This is not a prime but it's divisible by 4, so it'll return the double of the value: " + printWeirdPrime(12));
-        System.out.println("This is not a prime and not divisible by 4, so it'll return the triple of the value: " + printWeirdPrime(9));
+        System.out.println("This is a prime number, so it'll return the square of it: " + calculateWeirdPrime(11));
+        System.out.println("This is not a prime but it's divisible by 4, so it'll return the double of the value: " + calculateWeirdPrime(12));
+        System.out.println("This is not a prime and not divisible by 4, so it'll return the triple of the value: " + calculateWeirdPrime(9));
         System.out.println();
         System.out.println("Task 12.");
         array1 = new String[]{"clutch", "brake", "gas"};
@@ -52,7 +52,7 @@ public class MethodsPartTwo {
         System.out.println("Task 14.");
         boolean[] array2 = {true, true, true, false};
         boolean[] array3 = {false, false, false, true};
-        System.out.println("The results of the XOR are: " + printXOR(array2) + " and " + printXOR(array3));
+        System.out.println("The results of the XOR are: " + calculateXOR(array2) + " and " + calculateXOR(array3));
         System.out.println();
         System.out.println("Task 15.");
         int[] array4 = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
@@ -126,8 +126,8 @@ public class MethodsPartTwo {
     }
 
     //Task 11
-    public static int printWeirdPrime(int num) {
-        if (primeNumberGenerator(num)) {
+    public static int calculateWeirdPrime(int num) {
+        if (isPrime(num)) {
             return num * num;
         } else if (num % 4 == 0) {
             return num * 2;
@@ -135,7 +135,7 @@ public class MethodsPartTwo {
         return num * 3;
     }
 
-    public static boolean primeNumberGenerator(int num) {
+    public static boolean isPrime(int num) {
         if (num < 2) return false;
         for (int i = 2; i < num; i++) {
             if (num % i == 0) return false;
@@ -167,7 +167,7 @@ public class MethodsPartTwo {
     }
 
     //Task 14
-    public static boolean printXOR(boolean[] a) {
+    public static boolean calculateXOR(boolean[] a) {
         boolean result = a[0];
         for (int i = 1; i < a.length; i++) {
             result = result ^ a[i];
