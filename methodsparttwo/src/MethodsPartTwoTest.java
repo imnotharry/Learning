@@ -116,13 +116,13 @@ public class MethodsPartTwoTest {
     @Test
         //Task 14
     void shouldReturnTrueFor3TrueStatement() {
-        Assertions.assertTrue(Boolean.parseBoolean(String.valueOf(MethodsPartTwo.calculateXOR(testArray3))));
+        Assertions.assertTrue((MethodsPartTwo.calculateXOR(testArray3)));
     }
 
     @Test
         //Task 14
     void shouldReturnTrueFor3FalseStatement() {
-        Assertions.assertTrue(Boolean.parseBoolean(String.valueOf(MethodsPartTwo.calculateXOR(testArray4))));
+        Assertions.assertTrue((MethodsPartTwo.calculateXOR(testArray4)));
     }
 
     @Test
