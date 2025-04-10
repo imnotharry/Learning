@@ -118,5 +118,20 @@ public class Practicing {
         Scanner sc11 = new Scanner(System.in);
         int num11 = sc11.nextInt();
         int num12 = sc11.nextInt();
+        int max = Math.max(num11, num12);
+        int count = 0;
+        for (int i = 2; i <= max; i++) {
+            if (num11 % i == 0 && num12 % i == 0) {
+                count++;
+            }
+        }
+        if (count == 0) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not Prime");
+        }
     }
 }
+
+
+
