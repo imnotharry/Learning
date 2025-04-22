@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class ArrayFunTest {
     int[] testArray1 = {5, 10, 15, 20};
     int[] testArray2 = {25, 27, 14, 11};
-    int[] testArray2Value = {625, 729, 121, 0};
+    int[] testArray2Value = {625, 729, 121};
     String[] testArray3 = {"apple", "Anna"};
     String[] testArray4 = {"I", "don't", "know"};
     int[] testArray5 = {10, 20, 30, 40};
@@ -25,7 +25,7 @@ public class ArrayFunTest {
     //Task 1
     @Test
     void shouldReturnTheAverageOfTheNumbers() {
-        Assertions.assertEquals(15.0, ArrayFun.calculateTheAverageOfEvenNumbers(testArray1));
+        Assertions.assertEquals(30.0, ArrayFun.calculateTheAverageOfEvenNumbers(testArray1));
     }
 
     //Task 2

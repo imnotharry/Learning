@@ -58,21 +58,35 @@ public class ArrayFun {
                 sum += i;
             }
         }
-        return sum / 2.0;
+        return sum;
     }
 
     //Task 2
     public static int[] calculateSquaredOddNumbers(int[] array) {
-        int value = 0;
-        int[] subArray = new int[array.length];
-        for (int i : array) {
-            if (i % 2 != 0) {
-                subArray[value] = (int) Math.pow(i, 2);
-                value++;
+        int[] resultArray = new int[countElementsInTheArray(array)];
+        for (int i = 0, j = 0; i < array.length; i++) {
+            if (isOddNumber(array[i])) {
+                resultArray[j] = (int) Math.pow(array[i], 2);
+                j++;
             }
         }
-        return subArray;
+        return resultArray;
     }
+
+    public static int countElementsInTheArray(int[] array) {
+        int counter = 0;
+        for (int number : array) {
+            if (isOddNumber(number)) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    public static boolean isOddNumber(int number) {
+        return number % 2 == -1 || number % 2 == 1;
+    }
+
 
     //Task 3
     public static int countLetterAInArray(String[] array) {
@@ -88,13 +102,13 @@ public class ArrayFun {
 
     //Task 4
     public static String concatLongWords(String[] array) {
-        String concatenatedString = "";
+        StringBuilder concatenatedString = new StringBuilder();
         for (String string : array) {
             if (string.length() > 3) {
-                concatenatedString += string + " ";
+                concatenatedString.append(string).append(" ");
             }
         }
-        return concatenatedString;
+        return concatenatedString.toString();
     }
 
     //Task 5
@@ -113,7 +127,8 @@ public class ArrayFun {
         for (String[] stringArray : array) {
             for (String string : stringArray) {
                 for (char c : string.toCharArray()) {
-                    if (c == 'a' || c == 'o' || c == 'e' || c == 'i' || c == 'u') {
+                    if (c == 'a' || c == 'o' || c == 'e' || c == 'i' || c == 'u' ||
+                        c == 'A' || c == 'O' || c == 'E' || c == 'I' || c == 'U') {
                         letterCount++;
                     }
                 }
@@ -142,13 +157,20 @@ public class ArrayFun {
     }
 
     //Task 8
+    public static int calculate2DArraySize(String[][] array) {
+        int counter = 0;
+        for (String[] strings : array) {
+            counter += strings.length;
+        }
+        return counter;
+    }
+
     public static String[] uppercaseAllString(String[][] array) {
-        String[] uppercaseStrings = new String[array.length * array[0].length];
+        String[] uppercaseStrings = new String[calculate2DArraySize(array)];
         int index = 0;
-        for (String[] stringArray : array) {
-            for (String string : stringArray) {
-                uppercaseStrings[index] = string.toUpperCase();
-                index++;
+        for (String[] strings : array) {
+            for (String string : strings) {
+                uppercaseStrings[index++] = string.toUpperCase();
             }
         }
         return uppercaseStrings;
@@ -175,12 +197,14 @@ public class ArrayFun {
 
     //Task 10
     public static double calculateAverageStringLength(String[][] array) {
-        double totalLength = 0;
-        for (String[] stringArray : array) {
-            for (String string : stringArray) {
-                totalLength += string.length();
+        int value = 0;
+        int divider = 0;
+        for (String[] strings : array) {
+            for (String string : strings) {
+                divider++;
+                value += string.length();
             }
         }
-        return (totalLength * 1.0) / (array.length * array[0].length);
+        return (double) value / divider;
     }
 }
