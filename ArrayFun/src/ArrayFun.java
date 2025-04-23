@@ -53,12 +53,14 @@ public class ArrayFun {
     //Task 1
     public static double calculateTheAverageOfEvenNumbers(int[] array) {
         int sum = 0;
+        int counter = 0;
         for (int i : array) {
-            if (i % 2 == 0) {
+            if (i % 2 == 0 && i != 0) {
                 sum += i;
+                counter++;
             }
         }
-        return sum;
+        return (double) sum / counter;
     }
 
     //Task 2
@@ -127,8 +129,7 @@ public class ArrayFun {
         for (String[] stringArray : array) {
             for (String string : stringArray) {
                 for (char c : string.toCharArray()) {
-                    if (c == 'a' || c == 'o' || c == 'e' || c == 'i' || c == 'u' ||
-                        c == 'A' || c == 'O' || c == 'E' || c == 'I' || c == 'U') {
+                    if (c == 'a' || c == 'o' || c == 'e' || c == 'i' || c == 'u' || c == 'A' || c == 'O' || c == 'E' || c == 'I' || c == 'U') {
                         letterCount++;
                     }
                 }

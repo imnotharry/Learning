@@ -25,7 +25,7 @@ public class ArrayFunTest {
     //Task 1
     @Test
     void shouldReturnTheAverageOfTheNumbers() {
-        Assertions.assertEquals(30.0, ArrayFun.calculateTheAverageOfEvenNumbers(testArray1));
+        Assertions.assertEquals(15.0, ArrayFun.calculateTheAverageOfEvenNumbers(testArray1));
     }
 
     //Task 2
