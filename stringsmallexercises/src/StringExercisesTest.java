@@ -9,6 +9,6 @@ public class StringExercisesTest {
 
     @Test
     void shouldReturnTheNumberOfHello() {
-        Assertions.assertEquals(10, StringExercises.countHello("HelloIHellodon'tHelloknowHellobdak,dba,jdHello", "helloIhellodon'thelloknowhellobdak,dba,jdhello"));
+        Assertions.assertEquals(5, StringExercises.countHello("HelloIHellodon'tHelloknowHellobdak,dba,jdHello"));
     }
 }
