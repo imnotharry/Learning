@@ -10,7 +10,7 @@ public class Medium1Test {
 
     @Test
     void shouldReturnTrue() {
-        assertTrue(true, String.valueOf(Medium1.areAllValuesTrue(testArray1)));
+        assertTrue(Boolean.parseBoolean(String.valueOf(Medium1.areAllValuesTrue(testArray1))));
     }
 
     @Test
