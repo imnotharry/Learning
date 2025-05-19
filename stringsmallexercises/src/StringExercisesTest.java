@@ -26,4 +26,5 @@ public class StringExercisesTest {
     void shouldReturnHelloFromTheEnd() {
         Assertions.assertEquals(1, StringExercises.countHello("Okay, hello!"));
     }
+
 }

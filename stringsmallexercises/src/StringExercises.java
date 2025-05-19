@@ -19,18 +19,11 @@ public class StringExercises {
     }
 
     //Task 2
-    public static int countHello(String str1) {
+    public static int countHello(String string) {
         int count = 0;
-        for (int i = 0; i < str1.length(); i++) {
-            if (str1.charAt(i) == 'h') {
-                StringBuilder string = new StringBuilder();
-                int index = i + 4;
-                for (int j = i; j <= index; j++) {
-                    string.append(str1.charAt(j));
-                }
-                if (string.toString().equals("hello")) {
-                    count++;
-                }
+        for (int i = 0, j = 5; i < string.length() && j <= string.length(); i++, j++) {
+            if (string.substring(i, j).equals("hello")) {
+                count++;
             }
         }
         return count;
