@@ -3,9 +3,6 @@ public class Person {
     private String name;
     private Gender gender;
 
-    public Person() {
-    }
-
     public Person(String name, int age, Gender gender) {
         this.name = name;
         this.age = age;
