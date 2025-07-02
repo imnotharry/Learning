@@ -8,7 +8,7 @@ public class Chef extends Person {
     @Override
     public void introduce() {
 
-        System.out.println("Hi, my name is " + getName() + ". I am " + getAge() + ". I am a " + getGender() + " and a chef.");
+        System.out.printf("Hi, my name is " + getName() + ". I am " + getAge() + ". I am a " + getGender() + " and a chef.");
     }
 
     public String cook(String food) {
