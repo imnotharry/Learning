@@ -1,0 +1,6 @@
+public class EmailValidator implements Validator<String> {
+    @Override
+    public boolean isValid(String email) {
+        return email != null && email.matches("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$");
+    }
+}
