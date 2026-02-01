@@ -1,10 +1,12 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
+
 import java.util.List;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 public class HungarianPokerHandEvaluatorTest {
     private final HungarianPokerHandEvaluator evaluator = HungarianPokerHandEvaluator.getInstance();
 
@@ -67,8 +69,9 @@ public class HungarianPokerHandEvaluatorTest {
                 )
         );
     }
-        private static HungarianCard c(CardColor color, CardValue value){
-            return new HungarianCard(color, value);
+
+    private static HungarianCard c(CardColor color, CardValue value) {
+        return new HungarianCard(color, value);
     }
 }
 
